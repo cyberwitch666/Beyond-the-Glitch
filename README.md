@@ -9,6 +9,7 @@ This project is a work in progress. Currently, I need to:
 * add hyperlinks
 * copyedit
 * make responsive for mobile
+* upload to glitch for hosting
 
 ## built with
 * atom editor
