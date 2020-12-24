@@ -14,3 +14,8 @@ This project is a work in progress. Currently, I need to:
 * atom editor
 * github
 * figma
+
+## acknowledgements
+* Brigid Cohen and my entire class who held such a safe open container for exploring these ideas and more.
+* Legacy Russell's whose book "Glitch Feminism," pushed me to think further about my own work and how I relate to the glitch.
+* Neta Bomani for an inspirational / organized github which I have used for inspiration here.
