@@ -1,0 +1,471 @@
+html {
+  font-family: 'CenturySchoolbookW01-Ro', serif;
+  font-size: 18px;
+  color: white;
+  letter-spacing: .001em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+#home {
+  display: none;
+}
+
+#home-mobile {
+  display: block;
+  position: absolute;
+  width: 23px;
+  z-index: 100;
+  left: 15px;
+  top: 17px;
+}
+
+#menu {
+  display: block;
+  position: fixed;
+  width: 35px;
+  z-index: 501;
+  right: 20px;
+  top: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  #menu {
+    width: 29px;
+    top: 20px;
+  }
+
+  #home-mobile {
+    width: 19px;
+    top: 16px;
+  }
+}
+
+
+/* BORDER */
+
+#top, #bottom, #left, #right, #middle {
+	background: black;
+	position: fixed;
+  z-index: 600;
+	}
+#left, #right, #middle {
+		top: 0; bottom: 0;
+		width: 7px;
+		}
+#left { left: 0; }
+#right { right: 0; }
+#middle {
+    width: 0;
+    height: 0;
+  }
+
+#top, #bottom {
+		left: 0; right: 0;
+		height: 7px;
+		}
+
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+
+/* HALVES */
+
+.left-half {
+  position: fixed;
+  width: calc(100% - 14px);
+  height: 100%;
+  left: 7px;
+  overflow: scroll;
+  z-index: 500;
+  top: -100%;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: #000000;
+}
+
+.left-half-open {
+  position: fixed;
+  width: calc(100% - 14px);
+  height: 100%;
+  left: 7px;
+  overflow: scroll;
+  z-index: 10;
+  top: 0;
+  margin-left: 0;
+  z-index: 500;
+}
+
+#right-half {
+  position: absolute;
+  width: calc(100% - 14px);
+  height: calc(100% - 14px);
+  top: 7px;
+  right: 7px;
+  overflow: scroll;
+  background-color: #000000;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+}
+
+#right-half::-webkit-scrollbar {
+    display: none;
+}
+
+#left-gradient {
+  z-index: 0;
+  position: fixed;
+  height: 100%;
+  width: calc(100% - 14px);
+}
+
+#right-gradient {
+ display: none;
+}
+
+
+
+
+/* TOC */
+
+.menu a {
+  font-size: 0;
+  margin-bottom: -18px;
+}
+
+a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.left-half a:hover {
+  position: static;
+  -webkit-transform:translateX(15px);
+  -moz-transform:translateX(15px);
+  -o-transform:translateX(15px);
+  transform:translateX(15px);
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+a.plain-link:hover {
+  position: static;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+hr.big-3 {
+  border: 1px solid white;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  width: calc(100% - 20px);
+  margin: 0px 0 0 10px;
+}
+
+hr.big-mobile {
+  border: 1px solid white;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  width: calc(100% - 20px);
+  margin: 0px 0 0 10px;
+  display: block;
+}
+
+.small-space {
+  display: block;
+  height: 48px;
+}
+
+@media only screen and (min-width: 300px) {
+  .small-space {
+    height: 58px;
+  }
+}
+
+.chapter-1 {
+  position: relative;
+  z-index: 200;
+  font-family: 'CentSchbook Mono BT W011455489', serif;
+  font-size: 10vw;
+  line-height: .9em;
+  margin: 8px 0 0 10px;
+  text-decoration: none;
+  width: calc(100% - 40px);
+}
+
+.chapter {
+  position: relative;
+  z-index: 200;
+  font-family: 'CentSchbook Mono BT W011455489', serif;
+  font-size: 10vw;
+  line-height: .9em;
+  margin: 8px 0 10px 10px;
+  width: calc(100% - 40px);
+}
+
+.mobile-selected {
+  margin-left: 25px;
+}
+
+.mobile-spacing {
+  margin-bottom: -18px;
+}
+
+
+.TOC-subsection {
+  font-family: 'Blitz', sans-serif;
+  font-size: 8vw;
+  line-height: .9em;
+  margin: 4px 0 0 -5px;
+  width: calc(100% - 40px);
+}
+
+a.TOC-subsection:hover {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+nav.page-navigation {
+    position: relative;
+    z-index: 2;
+    margin: -10px 0 -13px -23px;
+}
+
+nav.page-navigation .current a {
+    margin-left: 20px;
+}
+
+
+ul {
+  list-style: none;
+}
+
+/* CHAPTER */
+
+.subsection {
+  font-family: 'glyphworldmeadow';
+  font-size: 8vw;
+  line-height: .85em;
+  margin: -7px 0 0 12px;
+  padding-top: 24px;
+  padding-right: 50px;
+}
+
+.sticky-test {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -12px;
+  z-index: 100;
+  background-color: #000000;
+}
+
+@media only screen and (max-width: 400px) {
+  .subsection  {
+    font-size: 10vw;
+    margin: -10px 0 0 12px;
+  }
+}
+
+
+hr.big-1 {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: calc(100% - 32px);
+  margin: 5px 0 0 15px;
+  z-index: 2;
+  position: relative;
+}
+
+@media only screen and (max-width: 400px) {
+  hr.big-1 {
+    width: calc(100% - 22px);
+    margin: 5px 0 0 10px;
+  }
+}
+
+.pre-text-space {
+  height: 130px;
+}
+
+.pre-title-space {
+  height: 200px;
+  position: relative
+}
+
+.chapter-text {
+  font-family: 'CenturySchoolbookW01-Ro', serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  letter-spacing: .01em;
+  z-index: 2;
+  position: relative;
+  margin: 0 15px 0 15px;
+	color: white;
+}
+
+.chapter-text>a {
+ 	text-decoration: underline;
+}
+
+@media only screen and (max-width: 400px) {
+  .chapter-text {
+    font-size: 1em;
+    line-height: 1.3em;
+    letter-spacing: .01em;
+    margin: 0 10px 0 10px;
+    letter-spacing: .01em;
+  }
+}
+
+.italic {
+  font-family: "CenturySchoolbookW01-It1119213", serif;
+}
+
+/* F O O T N O T E */
+
+.footnote {
+  position: fixed;
+  font-size: .87em;
+  background-color: white;
+  width: calc(100% - 40px);
+  height: auto;
+  z-index: 400;
+  left: 0;
+  bottom: -250;
+  padding: 20px 20px 75px 20px;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.two {
+  bottom: -250px;
+}
+
+.footnote-open {
+  bottom: 0;
+}
+
+.footnote-number {
+  position: absolute;
+  margin-top: -8px;
+  font-family: 'Blitz', sans-serif;
+  font-size: 2em;
+}
+
+.x {
+  display: none;
+}
+
+.super {
+  font-family: 'CenturySchoolbookW01-Ro', serif;
+  color: white;
+  margin: 0 10px 5px -2px;
+  line-height: 0em;
+  cursor: pointer;
+  font-size: .7em;
+  vertical-align: super;
+  text-decoration: underline;
+}
+
+
+.x-mobile {
+  width: 18px;
+  position: relative;
+  top: -9px;
+  right: -8px;
+  float: right;
+}
+
+.mobile-hidden {
+  display: inline;
+}
+
+/* I M A G E S */
+
+
+.pic {
+  position: absolute;
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.pic2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.medium-image {
+  display: block;
+  width: 100%;
+  margin-left: 0vw;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.pic-size {
+  max-width: 100%;
+  height: auto;
+}
+
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  overflow: scroll;
+  width: 90%;
+  height: 82%;
+  /*top: 7vh;*/
+  bottom: 9%;
+  right: 5%;
+  transform: rotate(-1.5deg);
+  transition: .5s;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+
+
+  @media only screen and (max-width: 400px) {
+    .modal-title {
+      font-size: 8vw;
+    }
+  }

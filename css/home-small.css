@@ -1,0 +1,274 @@
+html {
+  font-family: 'CenturySchoolbookW01-Ro', serif;
+  font-size: 18px;
+  color: white;
+  letter-spacing: .001em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+.body-image {
+  background-image: url(../images/background.png);
+  height: 100vh; /* viewport heightt */
+  width: 100vh;
+	background-size: cover;
+  background-attachment: fixed;
+
+}
+
+body {
+  background: back;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#menu {
+  display: block;
+  position: fixed;
+  width: 35px;
+  z-index: 1000;
+  right: 20px;
+  top: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  #menu {
+    width: 29px;
+    top: 19px;
+  }
+}
+
+#showMenu {
+  display: block;
+}
+
+/* BORDER */
+
+#top, #bottom, #left, #right, #middle {
+	background: black;
+	position: fixed;
+  z-index: 100;
+	}
+#left, #right, #middle {
+		top: 0; bottom: 0;
+		width: 7px;
+		}
+#left { left: 0; }
+#right { right: 0; }
+#middle {
+    width: 0;
+    height: 0;
+  }
+
+#top, #bottom {
+		left: 0; right: 0;
+		height: 7px;
+		}
+
+#top { top: 0; }
+#bottom { bottom: 0; }
+
+/* HALVES */
+
+.left-half {
+  position: fixed;
+  width: calc(100% - 14px);
+  height: 100%;
+  left: 7px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  z-index: 12;
+  top: -100%;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  -ms-overflow-style: none;
+}
+
+.left-half-open {
+  top: 0;
+}
+
+.left-half::-webkit-scrollbar {
+    display: none;
+}
+
+#right-half {
+  position: fixed;
+  width: calc(100% - 14px);
+  height: calc(100% - 14px);
+  top: 7px;
+  right: 7px;
+  /*overflow-x: hidden;*/
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+}
+
+#right-half::-webkit-scrollbar {
+    display: none;
+}
+
+#left-gradient {
+  z-index: 0;
+  position: fixed;
+  height: 100%;
+  width: calc(100% - 14px);
+}
+
+#right-gradient {
+  z-index: 1;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 1px;
+}
+
+
+a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+a:hover {
+  position: static;
+  -webkit-transform:translateX(15px);
+  -moz-transform:translateX(15px);
+  -o-transform:translateX(15px);
+  transform:translateX(15px);
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+hr.big-2 {
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 4px;
+  width: calc(100% - 39px);
+}
+
+hr.big-3 {
+  border: 1px solid #3D3DFA;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  width: calc(100% - 20px);
+  margin: 0px 0 0 10px;
+}
+
+.body-copy {
+  position: absolute;
+  z-index: 20;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: calc(100% - 20px);
+  display: flex;
+  overflow: hidden;
+}
+
+.title {
+  display: block;
+  font-family: 'glyphworldmeadow';
+  text-align: center;
+  font-size: 11vw;
+  line-height: 1.05em;
+  align-self: center;
+  margin-top: 0%;
+  padding-top: 40%;
+  margin-right: 40%;
+}
+
+
+
+hr.big-1 {
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: 'Blitz', sans-serif;
+  font-size: 8.5vw;
+  line-height: .85em;
+  margin: 12px 0 5px 0;
+}
+
+.top {
+ position: absolute;
+ top: 0;
+ width: calc(100% - 30px);
+}
+
+.bottom {
+ position: absolute;
+ bottom: 0;
+ width: calc(100% - 30px);
+}
+
+
+/* T O C */
+
+.chapter {
+  position: relative;
+  z-index: 200;
+  font-family: 'CentSchbook Mono BT W011455489', serif;
+  font-size: 10vw;
+  line-height: .9em;
+  margin: 8px 0 10px 10px;
+  width: calc(100% - 40px);
+}
+
+hr.big-3 {
+  border: 1px solid white;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  width: calc(100% - 20px);
+  margin: 0px 0 0 10px;
+}
+
+hr.big-mobile {
+  border: 1px solid white;
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  width: calc(100% - 20px);
+  margin: 0px 0 0 10px;
+  display: block;
+}
+
+.small-space {
+  height: 48px;
+}
+
+@media only screen and (min-width: 300px) {
+  .small-space {
+    height: 58px;
+  }
+  @font-face {
+      font-family: 'glyphworldmeadow';
+      src: url('fonts/glyphworld-meadow-webfont.woff2') format('woff2'),
+           url('fonts/glyphworld-meadow-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+
+}
+
+.medium-space {
+  height: 20px;
+}

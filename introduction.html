@@ -199,5 +199,149 @@
     <div class="pre-title-space"></div>
   </div>
 
+  <script type="text/javascript">
+     jQuery(document).ready(function($) {
+       // Hook up the current state to the nav bar
+       $('.page-navigation').onePageNav();
+     });
+
+   //            // Get the modal
+   //      var modal = document.getElementById("myModal");
+//
+ //        // Get the button that opens the modal
+ //        var btn = document.getElementById("myBtn");
+
+         // Get the <span> element that closes the modal
+ //        var span = document.getElementsByClassName("close")[0];
+
+         // When the user clicks the button, open the modal
+ //        btn.onclick = function() {
+ //          modal.style.display = "block";
+ //        }
+
+         // When the user clicks on <span> (x), close the modal
+ //        span.onclick = function() {
+ //          modal.style.display = "none";
+ //        }
+
+         // When the user clicks anywhere outside of the modal, close it
+ //        window.onclick = function(event) {
+ //          if (event.target == modal) {
+ //            modal.style.display = "none";
+ //          }
+ //        }
+
+         var menuTop = document.getElementById( 'left-side-s1' ), //left side
+             menuPic = document.getElementById( 'menu-pic-s1' ), //first image
+             menuPic5 = document.getElementById( 'menu-pic-s2' ), //first image
+             menuFoot1 = document.getElementById( 'footnote-s1' ), //first footnote
+             menuFoot2 = document.getElementById( 'footnote-s2' ), //second footnote
+             menuModal = document.getElementById( 'myModal' ), //modal
+
+             showTop100 = document.getElementById( 'showTop100' ), //menu
+             showFoot0 = document.getElementById( 'showFoot0' ), //x first footnote
+             showFoot00 = document.getElementById( 'showFoot00' ), //x second footnote
+             showFoot1 = document.getElementById( 'showFoot1' ), //first footnote
+             showFoot2 = document.getElementById( 'showFoot2' ), //second footnote
+
+             showTop = document.getElementById( 'showTop' ), //first footnote left side
+             showPic = document.getElementById( 'showPic' ), //first footnote image1
+             showPic5 = document.getElementById( 'showPic5' ), //first footnote image2
+
+             showTop2 = document.getElementById( 'showTop2' ),//x left side
+             showPic2 = document.getElementById( 'showPic2' ),//x image1
+             showPic6 = document.getElementById( 'showPic6' ),//x image2
+
+             showTop3 = document.getElementById( 'showTop3' ),//second footnote left side
+             showPic3 = document.getElementById( 'showPic3' ),//second footnote image1
+             showPic7 = document.getElementById( 'showPic7' ),//second footnote image1
+
+             showModal = document.getElementById( 'showModal' ),//modal
+
+             body = document.body;
+
+             showTop100.onclick = function() {                  //menu
+               classie.toggle( this, 'active' );
+               classie.toggle( menuTop, 'left-half-open' );
+             };
+
+             showModal.onclick = function() {                  //menu
+               classie.toggle( this, 'active' );
+               classie.toggle( menuModal, 'modal-open' );
+             };
+
+             showFoot0.onclick = function() {                  //x first footnote
+               classie.toggle( this, 'active' );
+               classie.toggle( menuFoot1, 'footnote-open' );
+             }
+             showFoot00.onclick = function() {                  //x second footnote
+               classie.toggle( this, 'active' );
+               classie.toggle( menuFoot2, 'footnote-open' );
+             };
+
+             showFoot1.onclick = function() {                  //first footnote
+               classie.toggle( this, 'active' );
+               classie.toggle( menuFoot1, 'footnote-open' );
+             };
+
+             showFoot2.onclick = function() {                  //second footnote
+               classie.toggle( this, 'active' );
+               classie.toggle( menuFoot2, 'footnote-open' );
+             };
+
+             showTop.onclick = function() {                  //first footnote left side
+               classie.toggle( this, 'active' );
+               classie.toggle( menuTop, 'left-half-open' );
+             };
+
+             showPic.onclick = function() {                  //first footnote image1
+               classie.toggle( this, 'active' );
+               classie.toggle( menuPic, 'pic-open' );
+             };
+
+             showPic5.onclick = function() {                  //first footnote image2
+               classie.toggle( this, 'active' );
+               classie.toggle( menuPic5, 'pic-open' );
+             };
+
+             showTop2.onclick = function() {                   //x left side
+               classie.toggle( this, 'active' );
+               classie.toggle( menuTop, 'left-half-open' );
+             };
+
+             showPic2.onclick = function() {                  //x image1
+               classie.toggle( this, 'active' );
+               classie.toggle( menuPic, 'pic-open' );
+             };
+
+             showPic6.onclick = function() {                  //x image2
+               classie.toggle( this, 'active' );
+               classie.toggle( menuPic5, 'pic-open' );
+             };
+
+             showTop3.onclick = function() {                  //second footnote left side
+               classie.toggle( this, 'active' );
+               classie.toggle( menuTop, 'left-half-open' );
+             };
+
+             showPic3.onclick = function() {                  //second footnote image1
+               classie.toggle( this, 'active' );
+               classie.toggle( menuPic, 'pic-open' );
+             };
+
+             showPic7.onclick = function() {                  //second footnote image2
+               classie.toggle( this, 'active' );
+               classie.toggle( menuPic5, 'pic-open' );
+             };
+
+   </script>
+
+
+   <script></script>
+   <script data-account="qlwLuJWZSS" src="https://cdn.userway.org/widget.js"></script>
+
+ </body>
+
+
 
 </html>

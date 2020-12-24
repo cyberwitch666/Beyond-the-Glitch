@@ -79,13 +79,29 @@
 
   <div id="right-half">
       <div class="body-image">
+      <p class="title">GAZE<br>MAKES<br>THE GLITCH</p>
 
       </div>
 
   </div>
 
-  </body>
+  <script type="text/javascript">
 
+           var menuTop = document.getElementById( 'left-side-s1' ), //menu
+
+               showTop100 = document.getElementById( 'showTop100' ), //menu
+               body = document.body;
+
+               showTop100.onclick = function() {                  //menu
+                 classie.toggle( this, 'active' );
+                 classie.toggle( menuTop, 'left-half-open' );
+               };
+
+     </script>
+
+     <script> </script>
+
+   </body>
 
 
 </html>

@@ -97,6 +97,18 @@ body::-webkit-scrollbar {
 }
 
 
+.title {
+  font-family: 'glyphworldmeadow';
+  text-align: center;
+  font-size: 6vw;
+  line-height: 1.05em;
+  align-self: center;
+  margin-top: 0%;
+  padding-top: 30%;
+  margin-right: 20%;
+}
+
+
 a {
   display: block;
   color: white;
@@ -190,9 +202,7 @@ hr.big-1 {
 
 
 
-@media only screen and (min-width: 1500px) {
 
-  }
   @font-face {
       font-family: 'glyphworldmeadow';
       src: url('fonts/glyphworld-meadow-webfont.woff2') format('woff2'),

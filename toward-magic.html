@@ -98,7 +98,8 @@
 
             <nav class="site-navigation page-navigation">
               <ul class="menu">
-                <li><a href="#section-one" class="TOC-subsection" style="font-family: glyphworldmeadow">SPELLS</a></li>
+                <li><a href="#section-one" class="TOC-subsection" style="font-family: glyphworldmeadow">ONE-WORLD WORLD</a></li>
+                <li><a href="#section-two" class="TOC-subsection" style="font-family: glyphworldmeadow">ON MAGIC</a></li>
               </ul>
             </nav>
 
@@ -120,7 +121,7 @@
       <div id="section-one">
 
         <div class="sticky-test">
-          <p class="subsection">SPELLS</p>
+          <p class="subsection">ONE-WORLD WORLD</p>
           <hr class="big-1">
         </div>
 
@@ -128,9 +129,166 @@
 
   <h3>MASTERS PROJECTIONS</h3>
   <p>We live in the Masters Projections and the Master’s World, although many of us simultaneously live in other worlds as well. Our other worlds provide more ways of being, more opportunities to exist, more collaborations, and more forms of knowledges to support us in this world traveling we embark on. Currently, the algorithm is controlled by those who want to negate these worlds.</p>
-
   <p>The technologies of capitalism and colonialism and the many start-ups birthed under them rely on the maintenance of the “one-world world,” a term coined by John Law, professor of sociology and technology studies at The Open University. The “one-world world” is a world that “privileges itself and negates the presence of other worlds.” This one-world world has a set of rules, relations, and ideologies that compose all the things that we come to know as ULTIMATE TRUTH and REALITY.</p>
-
-  <p>These sets of rules, relations, and ideologies also compose what, in my magical community, we call CONSENSUS REALITY or the collection of beliefs regarded as true. In many ways, the algorithm</p>
-
+  <p>These sets of rules, relations, and ideologies also compose what, in my magical community, we call CONSENSUS REALITY or the collection of beliefs regarded as true. In many ways, the algorithm and what communicates to us what is and is not possible.</p>
   <p>But many of us know that this reality is not the only reality and many of us want more and we can have more.</p>
+
+  <div class="sticky-test">
+    <p class="subsection" id="section-two">ON MAGIC</p>
+    <hr class="big-1">
+  </div>
+
+  <p>The definition of magic that I use here is defined by Aleister Crowley, English occultist and magician, as the “art and science of causing change in accordance with the will.” Here we can think of will as an engagement of intentionality. Although I am not a huge follower of Crowley or interested solely in European forms of magic, this definition of magic has been an important way to help ground this conversation on magic so as not to get lost in all the misconceptions or ideas that magic is something inaccessible or only for people with “superior” powers.</p>
+  <p>We all are capable of causing change and many of us have been doing magic for quite some time such as breathing exercises, working with plants, meditation, wishing on a shooting star, carrying lucky objects, prayer, worshipping and honoring the moon or the sun, sex, sharing our stories with others, community work, activism, re-naming ourselves, re-claiming our bodies, engaging in decolonial practices, burning incense, carrying crystals around, making altars, paying attention to our dreams, using essential oils, engaging in tarot, allowing ourselves to be moved by each other, by art, and by music. But what if that work became more intentional and we became more confident in our powers?</p>
+  <p>We are called to create our own realities, to question and evaluate what is presented to us, and to understand the limitations of any system that we chose to abide by or use.</p>
+
+</div>
+
+
+
+
+  <div class="pre-title-space"></div>
+</div>
+<script type="text/javascript">
+   jQuery(document).ready(function($) {
+     // Hook up the current state to the nav bar
+     $('.page-navigation').onePageNav();
+   });
+
+ //            // Get the modal
+ //      var modal = document.getElementById("myModal");
+//
+//        // Get the button that opens the modal
+//        var btn = document.getElementById("myBtn");
+
+       // Get the <span> element that closes the modal
+//        var span = document.getElementsByClassName("close")[0];
+
+       // When the user clicks the button, open the modal
+//        btn.onclick = function() {
+//          modal.style.display = "block";
+//        }
+
+       // When the user clicks on <span> (x), close the modal
+//        span.onclick = function() {
+//          modal.style.display = "none";
+//        }
+
+       // When the user clicks anywhere outside of the modal, close it
+//        window.onclick = function(event) {
+//          if (event.target == modal) {
+//            modal.style.display = "none";
+//          }
+//        }
+
+       var menuTop = document.getElementById( 'left-side-s1' ), //left side
+           menuPic = document.getElementById( 'menu-pic-s1' ), //first image
+           menuPic5 = document.getElementById( 'menu-pic-s2' ), //first image
+           menuFoot1 = document.getElementById( 'footnote-s1' ), //first footnote
+           menuFoot2 = document.getElementById( 'footnote-s2' ), //second footnote
+           menuModal = document.getElementById( 'myModal' ), //modal
+
+           showTop100 = document.getElementById( 'showTop100' ), //menu
+           showFoot0 = document.getElementById( 'showFoot0' ), //x first footnote
+           showFoot00 = document.getElementById( 'showFoot00' ), //x second footnote
+           showFoot1 = document.getElementById( 'showFoot1' ), //first footnote
+           showFoot2 = document.getElementById( 'showFoot2' ), //second footnote
+
+           showTop = document.getElementById( 'showTop' ), //first footnote left side
+           showPic = document.getElementById( 'showPic' ), //first footnote image1
+           showPic5 = document.getElementById( 'showPic5' ), //first footnote image2
+
+           showTop2 = document.getElementById( 'showTop2' ),//x left side
+           showPic2 = document.getElementById( 'showPic2' ),//x image1
+           showPic6 = document.getElementById( 'showPic6' ),//x image2
+
+           showTop3 = document.getElementById( 'showTop3' ),//second footnote left side
+           showPic3 = document.getElementById( 'showPic3' ),//second footnote image1
+           showPic7 = document.getElementById( 'showPic7' ),//second footnote image1
+
+           showModal = document.getElementById( 'showModal' ),//modal
+
+           body = document.body;
+
+           showTop100.onclick = function() {                  //menu
+             classie.toggle( this, 'active' );
+             classie.toggle( menuTop, 'left-half-open' );
+           };
+
+           showModal.onclick = function() {                  //menu
+             classie.toggle( this, 'active' );
+             classie.toggle( menuModal, 'modal-open' );
+           };
+
+           showFoot0.onclick = function() {                  //x first footnote
+             classie.toggle( this, 'active' );
+             classie.toggle( menuFoot1, 'footnote-open' );
+           }
+           showFoot00.onclick = function() {                  //x second footnote
+             classie.toggle( this, 'active' );
+             classie.toggle( menuFoot2, 'footnote-open' );
+           };
+
+           showFoot1.onclick = function() {                  //first footnote
+             classie.toggle( this, 'active' );
+             classie.toggle( menuFoot1, 'footnote-open' );
+           };
+
+           showFoot2.onclick = function() {                  //second footnote
+             classie.toggle( this, 'active' );
+             classie.toggle( menuFoot2, 'footnote-open' );
+           };
+
+           showTop.onclick = function() {                  //first footnote left side
+             classie.toggle( this, 'active' );
+             classie.toggle( menuTop, 'left-half-open' );
+           };
+
+           showPic.onclick = function() {                  //first footnote image1
+             classie.toggle( this, 'active' );
+             classie.toggle( menuPic, 'pic-open' );
+           };
+
+           showPic5.onclick = function() {                  //first footnote image2
+             classie.toggle( this, 'active' );
+             classie.toggle( menuPic5, 'pic-open' );
+           };
+
+           showTop2.onclick = function() {                   //x left side
+             classie.toggle( this, 'active' );
+             classie.toggle( menuTop, 'left-half-open' );
+           };
+
+           showPic2.onclick = function() {                  //x image1
+             classie.toggle( this, 'active' );
+             classie.toggle( menuPic, 'pic-open' );
+           };
+
+           showPic6.onclick = function() {                  //x image2
+             classie.toggle( this, 'active' );
+             classie.toggle( menuPic5, 'pic-open' );
+           };
+
+           showTop3.onclick = function() {                  //second footnote left side
+             classie.toggle( this, 'active' );
+             classie.toggle( menuTop, 'left-half-open' );
+           };
+
+           showPic3.onclick = function() {                  //second footnote image1
+             classie.toggle( this, 'active' );
+             classie.toggle( menuPic, 'pic-open' );
+           };
+
+           showPic7.onclick = function() {                  //second footnote image2
+             classie.toggle( this, 'active' );
+             classie.toggle( menuPic5, 'pic-open' );
+           };
+
+ </script>
+
+
+ <script></script>
+ <script data-account="qlwLuJWZSS" src="https://cdn.userway.org/widget.js"></script>
+
+</body>
+</html>
