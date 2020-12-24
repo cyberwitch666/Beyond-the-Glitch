@@ -8,7 +8,6 @@ This project is a work in progress. Currently, I need to:
 * update with resources for further reading
 * add hyperlinks
 * copyedit
-* make responsive for mobile
 * upload to glitch for hosting
 
 ## built with
