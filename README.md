@@ -16,6 +16,7 @@ This project is a work in progress. Currently, I need to (Updated 12/24/20):
 * atom editor
 * github
 * figma
+* glitch
 
 ## acknowledgements
 * Brigid Cohen and my entire class who held such a safe open container for exploring these ideas and more.
