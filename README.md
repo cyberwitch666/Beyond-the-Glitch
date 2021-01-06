@@ -4,10 +4,6 @@ This project is an updated website, collection of thoughts, images and proposals
 ![Screenshot of Gaze Makes the Glitch homepage image](https://github.com/cyberwitch666/Beyond-the-Glitch/blob/main/images/homepage.png)
 
 This project is a work in progress. Currently, I need to (Updated 12/24/20):
-* expand on the embodiment section
-* examples of algorithms of oppression
-* examples of how to engage other senses beyond sight
-* should one world world section go under masters projection?
 * under magic tools included examples of intentional rituals
 * under existing with the glitch, includ other-world and other-being collaborations; include convo about time
 * update with resources for further reading
@@ -20,6 +16,7 @@ This project is a work in progress. Currently, I need to (Updated 12/24/20):
 * atom editor
 * github
 * figma
+* glitch
 
 ## acknowledgements
 * Brigid Cohen and my entire class who held such a safe open container for exploring these ideas and more.
