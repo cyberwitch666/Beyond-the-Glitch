@@ -13,13 +13,26 @@ html::-webkit-scrollbar {
 }
 
 .body-image {
-  background-image: url(../images/background.png);
+  background-image: url(../images/max.png);
   height: 100vh; /* viewport heightt */
   width: 100vh;
-	background-size: cover;
+	background-size: contain;
   background-attachment: fixed;
 
 }
+
+
+
+br {
+  margin-top: 8%;
+}
+
+mark {
+  background-color: #D7D7E4;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 
 body {
   background: back;

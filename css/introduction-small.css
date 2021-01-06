@@ -29,12 +29,13 @@ body::-webkit-scrollbar {
 
 #home {
   display: none;
+
 }
 
 #home-mobile {
   display: block;
   position: absolute;
-  width: 23px;
+  width: 40px;
   z-index: 100;
   left: 15px;
   top: 17px;
@@ -46,7 +47,7 @@ body::-webkit-scrollbar {
   width: 35px;
   z-index: 501;
   right: 20px;
-  top: 20px;
+  top: 18px;
 }
 
 @media only screen and (max-width: 400px) {

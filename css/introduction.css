@@ -142,6 +142,14 @@ blockquote {
 
 /* TOC */
 
+a.inline {
+  display: inline;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: yellow;
+
+}
+
 a {
   display: block;
   color: white;
@@ -151,6 +159,14 @@ a {
   -o-transition: .5s;
   transition: .5s;
 }
+
+sup {
+  vertical-align: super;
+  font-size: smaller;
+  display: inline;
+}
+
+
 
 .left-half a:hover {
   position: static;
